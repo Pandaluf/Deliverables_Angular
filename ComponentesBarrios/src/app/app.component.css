@@ -1,0 +1,20 @@
+.gridss{
+  display: grid;
+  grid-template-areas:
+  'toolbar  toolbar   toolbar   toolbar   toolbar'
+  'menu     content   content   content   content'
+  'menu     content   content   content   content'
+  'menu     content   content   content   content';
+}
+.grid-header{
+  grid-area: toolbar;
+  background-color: #F7B000;
+}
+.grid-content{
+  grid-area: content;
+  background-color: #DFDFDF;
+}
+.grid-menu{
+  grid-area: menu;
+  background-color: #85DA5A;
+}

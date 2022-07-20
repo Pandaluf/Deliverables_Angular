@@ -1,0 +1,8 @@
+.toolbar{
+  display: flex;
+  background-color: #F7B000;
+}
+.site{
+  margin-left: auto;
+  margin-right: 30px;
+}
