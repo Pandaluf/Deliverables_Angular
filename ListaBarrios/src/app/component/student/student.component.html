@@ -1,0 +1,21 @@
+<table class="Tables">
+  <thead class="titlesStudents">
+    <tr class="border-TitlesStudents">
+      <td><b>Number Position</b></td>
+      <td><b>First Name</b></td>
+      <td><b>Last Name</b></td>
+      <td><b>Notes</b></td>
+      <td><b>Grade</b></td>
+    </tr>
+  </thead>
+  <ng-container *ngFor="let student of students">
+    <tr class="table-content" [ngClass]="student.note < 13 ? 'disapproved': 'approved'">
+      <td> {{ student.position }} </td>
+      <td> {{ student.firstName }} </td>
+      <td> {{ student.lastName }} </td>
+      <td> {{ student.note }} </td>
+      <td> {{ student.grade }} </td>
+    </tr>
+  </ng-container>
+
+</table>

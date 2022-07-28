@@ -1,0 +1,31 @@
+.titlesStudents{
+  color: red;
+  text-align: center;
+  font-family: "Blueberry Days";
+  font-size: 20px;
+}
+.Tables{
+  width: 920px;
+  border: 120px solid;
+  border-image: url("images/Border-Frame-Bear-School.png");
+  border-image-slice: 350;
+  border-right: 100px solid;
+  border-left: 100px solid;
+  margin: 100px auto;
+}
+.table-content{
+  font-family: animeace2_reg;
+  font-size: 13px;
+  text-align: center;
+  font-weight: bold;
+}
+td{
+  height: 33px;
+}
+.disapproved{
+  color: honeydew;
+  background: #CB1616;
+}
+.approved{
+  color: limegreen;
+}

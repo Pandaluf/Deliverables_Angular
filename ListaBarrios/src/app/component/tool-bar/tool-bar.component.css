@@ -1,0 +1,8 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+.Menu{
+  background: goldenrod;
+  width: 200px;
+  position: fixed;
+}
