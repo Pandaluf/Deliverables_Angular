@@ -4,6 +4,7 @@
       <td><b>Number Position</b></td>
       <td><b>First Name</b></td>
       <td><b>Last Name</b></td>
+      <td><b>Birthday</b></td>
       <td><b>Notes</b></td>
       <td><b>Grade</b></td>
     </tr>
@@ -13,6 +14,7 @@
       <td> {{ student.position }} </td>
       <td> {{ student.firstName }} </td>
       <td> {{ student.lastName }} </td>
+      <td> {{ student.birthday | date }}</td>
       <td> {{ student.note }} </td>
       <td> {{ student.grade }} </td>
     </tr>
