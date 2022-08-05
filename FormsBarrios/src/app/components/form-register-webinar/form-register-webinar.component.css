@@ -1,0 +1,34 @@
+.title{
+  text-align: center;
+  color:white;
+}
+
+.form{
+  position: relative;
+  width: 740px;
+  height: 498px;
+  margin: 0 auto;
+  padding: 1em;
+  box-sizing: border-box;
+  border: 1px solid white;
+  color: white;
+}
+
+button {
+  padding: 5px;
+  font: bold .6em sans-serif;
+  border: 2px solid white;
+  border-radius: 5px;
+  background: white;
+  cursor: pointer;
+  transform: rotate(-1.5deg);
+}
+
+button:hover,
+button:focus {
+  outline     : none;
+  background  : orange;
+  color       : red;
+}
+
+

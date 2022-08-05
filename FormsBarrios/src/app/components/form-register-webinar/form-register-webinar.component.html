@@ -1,0 +1,30 @@
+<div class="title">
+  <h1>Formulario de Inscripción</h1>
+  <p>Charla educativa sobre la Ciberseguridad APT</p>
+  <p>Profesor: Andres Martin</p>
+  <p>Universidad de los Andes</p>
+</div>
+
+<form class="form" [formGroup]="WebinarForm" (ngSubmit)="Delivery()">
+  <label>Name: </label>
+  <input type="text" formControlName="name">
+  <p *ngIf="WebinarForm.get('name')?.errors?.['required']">This part is obligatory</p>
+
+  <br><br>
+  <label>Email: </label>
+  <input type="text" formControlName="email">
+  <p *ngIf="WebinarForm.get('email')?.errors?.['required']">This part is obligatory</p>
+  <p *ngIf="WebinarForm.get('email')?.errors?.['email']">It should be in Email format</p>
+
+  <br><br>
+  <label>User Code of the University: </label>
+  <input type="number" formControlName="code">
+  <p *ngIf="WebinarForm.get('code')?.errors?.['required']">This part is obligatory</p>
+
+  <br><br>
+  <label>Country: </label>
+  <input type="text">
+
+  <br><br>
+  <button type="submmit" [disabled]="!WebinarForm.valid">Enviar</button>
+</form>
