@@ -16,6 +16,7 @@ export class FormRegisterWebinarComponent implements OnInit {
       name: new FormControl('',[Validators.required]),
       email: new FormControl('', [Validators.required, Validators.email]),
       code: new FormControl('', [Validators.required]),
+      country: new FormControl('')
     })
   }
 
