@@ -7,12 +7,15 @@ import {FormBuilder, FormControl, FormGroup, Validator, Validators} from "@angul
   styleUrls: ['./form-register-webinar.component.css']
 })
 export class FormRegisterWebinarComponent implements OnInit {
-  WebinarForm !: FormGroup;
+  webinarForm !: FormGroup;
 
   constructor(
     private form: FormBuilder
   ) {
-    this.WebinarForm = this.form.group({
+  }
+
+  ngOnInit(): void {
+    this.webinarForm = this.form.group({
       name: new FormControl('',[Validators.required]),
       email: new FormControl('', [Validators.required, Validators.email]),
       code: new FormControl('', [Validators.required]),
@@ -20,11 +23,8 @@ export class FormRegisterWebinarComponent implements OnInit {
     })
   }
 
-  ngOnInit(): void {
-  }
-
-  Delivery(){
-    console.log(this.WebinarForm);
+  delivery(){
+    console.log(this.webinarForm);
   }
 
 }
