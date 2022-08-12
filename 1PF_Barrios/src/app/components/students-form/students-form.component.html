@@ -1,0 +1,27 @@
+<h1>New Student</h1>
+<form [formGroup]="newStudentForm" (ngSubmit)="addStudent()">
+  <label>Name: </label>
+  <input type="text" formControlName="name">
+  <p *ngIf="newStudentForm.get('name')?.errors?.['required']">This field is obligatory</p>
+  <br>
+  <label>Last Name: </label>
+  <input type="text" formControlName="lastName">
+  <p *ngIf="newStudentForm.get('lastName')?.errors?.['required']">This field is obligatory</p>
+  <br>
+  <label>Age: </label>
+  <input type="number" formControlName="age">
+  <p *ngIf="newStudentForm.get('age')?.errors?.['required']">This field is obligatory</p>
+  <br>
+  <label>Carrer: </label>
+  <input type="text" formControlName="carrer">
+  <p *ngIf="newStudentForm.get('carrer')?.errors?.['required']">This field is obligatory</p>
+  <br>
+  <label>Email: </label>
+  <input type="email" formControlName="email">
+  <p *ngIf="newStudentForm.get('email')?.errors?.['required']">This field is obligatory</p>
+  <p *ngIf="newStudentForm.get('email')?.errors?.['email']">This field should be a email format</p>
+  <br>
+  <button type="submit" [disabled]="!newStudentForm.valid">Add Student</button>
+</form>
+
+<app-students-list></app-students-list>

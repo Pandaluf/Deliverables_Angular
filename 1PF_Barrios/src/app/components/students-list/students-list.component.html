@@ -1,0 +1,20 @@
+<table class="Tables">
+  <thead class="titlesStudents">
+  <tr class="border-TitlesStudents">
+    <td><b>Name</b></td>
+    <td><b>Last Name</b></td>
+    <td><b>Age</b></td>
+    <td><b>Carrier</b></td>
+    <td><b>Email</b></td>
+  </tr>
+  </thead>
+  <ng-container *ngFor="let student of students">
+    <tr class="table-content" [ngClass]="student.carrer == 'Physiology' ? 'Physiologic': 'othersCarriers'">
+      <td> {{ student.name }} </td>
+      <td> {{ student.lastName }} </td>
+      <td> {{ student.age }}</td>
+      <td> {{ student.carrer }} </td>
+      <td> {{ student.email }} </td>
+    </tr>
+  </ng-container>
+</table>

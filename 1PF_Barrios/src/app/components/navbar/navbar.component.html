@@ -1,0 +1,12 @@
+<br>
+<br>
+<ng-container *ngIf="navegationMenu != -1">
+  <div @enterState>
+    <div class="navbar">
+      <div *ngFor="let menu of data">
+        <h2>{{ menu }}</h2>
+      </div>
+    </div>
+  </div>
+</ng-container>
+
