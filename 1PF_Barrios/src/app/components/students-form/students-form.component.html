@@ -21,7 +21,7 @@
   <p *ngIf="newStudentForm.get('email')?.errors?.['required']">This field is obligatory</p>
   <p *ngIf="newStudentForm.get('email')?.errors?.['email']">This field should be a email format</p>
   <br>
-  <button type="submit" [disabled]="!newStudentForm.valid">Add Student</button>
+  <button mat-flat-button color="primary" type="submit" [disabled]="!newStudentForm.valid">Add Student</button>
 </form>
 
 <app-students-list></app-students-list>
